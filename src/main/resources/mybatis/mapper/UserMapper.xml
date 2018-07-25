@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springbootmybatis.mapper.UserMapper">
+
+    <!--<sql id="zd">-->
+        <!--id,addTime,deleteStatus,MSN,QQ,WW,address,availableBalance,birthday,email,freezeBlance,gold,integral,lastLoginDate,-->
+    <!--lastLoginIp,loginCount,loginDate,loginIp,mobile,password,report,sex,status,telephone,trueName,userName,userRole,user_credit,photo_id,-->
+    <!--store_id,qq_openid,sina_openid,store_quick_menu,parent_id,years,area_id-->
+    <!--</sql>-->
+    <select id="getUsers" resultType="com.springbootmybatis.model.UserEntity">
+        select * from wemall_user
+    </select>
+
+</mapper>

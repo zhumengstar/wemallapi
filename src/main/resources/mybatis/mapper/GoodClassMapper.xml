@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springbootmybatis.mapper.GoodClassMapper"><!--dao接口-->
+
+    <select id="getAll" resultType="com.springbootmybatis.model.GoodClassEntity">
+
+        SELECT
+      *
+        FROM wemall_goodsclass
+    </select>
+
+    <select id="getOne" parameterType="java.lang.Long" resultType="com.springbootmybatis.model.GoodClassEntity">
+        SELECT
+   *
+        FROM wemall_goodsclass WHERE id=#{id}
+    </select>
+
+    <insert id="insert" parameterType="com.springbootmybatis.model.GoodClassEntity">
+        INSERT INTO wemall_goodsclass (id,addTime,deleteStatus,className,display,levels,recommend,sequence,goodsType_id,parent_id,seo_description,seo_keywords
+        ,icon_sys,icon_type,icon_acc_id)VALUES(#{id},#{addTime},#{deleteStatus},#{className},#{display},#{levels},#{recommend},#{sequence},#{goodsType_id},
+        #{parent_id},#{seo_description},#{seo_keywords},#{icon_sys},#{icon_type},#{icon_acc_id})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        DELETE FROM wemall_goodsclass WHERE id=#{id}
+    </delete>
+
+    <select id="getGoodsAtoB" parameterType="Map" resultType="com.springbootmybatis.model.GoodClassEntity">
+        select * FROM wemall_goodsclass
+        <where>
+        id BETWEEN #{id1} AND #{id2}
+        </where>
+    </select>
+
+    <select id="getClassByClassName" parameterType="java.lang.String" resultType="com.springbootmybatis.model.GoodClassEntity">
+        select * from wemall_goodsclass where className like '%${classname}%';
+    </select>
+
+
+</mapper>
