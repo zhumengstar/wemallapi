@@ -18,7 +18,7 @@ public class UserController {
 
     @RequestMapping("/getUsers")
     public List<UserEntity> getAll() {
-        return userMapper.getUsers();
+        return userMapper.getAll();
     }
 
     @RequestMapping("/getOne/{id}")

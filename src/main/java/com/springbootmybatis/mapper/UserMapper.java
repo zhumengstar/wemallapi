@@ -5,7 +5,7 @@ import com.springbootmybatis.model.UserEntity;
 import java.util.List;
 
 public interface UserMapper {
-    List<UserEntity> getUsers();
+    List<UserEntity> getAll();
 
     UserEntity getOne(long id);
 }
