@@ -11,4 +11,8 @@
         select * from wemall_user
     </select>
 
+    <select id="getOne" resultType="com.springbootmybatis.model.UserEntity">
+        select * from wemall_user where id=#{id}
+    </select>
+
 </mapper>

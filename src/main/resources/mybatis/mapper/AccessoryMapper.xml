@@ -5,6 +5,6 @@
         select * from wemall_accessory
     </select>
     <select id="getOne" parameterType="Long" resultType="com.springbootmybatis.model.AccessoryEntity">
-        select * from wemall_accessory where id={id}
+        select * from wemall_accessory where id=#{id}
     </select>
 </mapper>

@@ -21,7 +21,7 @@ public class AccessoryController {
         return accessoryMapper.getAll();
     }
 
-    @RequestMapping("/getAccessory/{id}")
+    @RequestMapping("/getOne/{id}")
     public AccessoryEntity getOne(@PathVariable long id){
         return accessoryMapper.getOne(id);
     }
