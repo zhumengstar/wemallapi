@@ -3,16 +3,11 @@
 <mapper namespace="com.springbootmybatis.mapper.GoodClassMapper"><!--dao接口-->
 
     <select id="getAll" resultType="com.springbootmybatis.model.GoodClassEntity">
-
-        SELECT
-      *
-        FROM wemall_goodsclass
+        SELECT * FROM wemall_goodsclass
     </select>
 
     <select id="getOne" parameterType="java.lang.Long" resultType="com.springbootmybatis.model.GoodClassEntity">
-        SELECT
-   *
-        FROM wemall_goodsclass WHERE id=#{id}
+        SELECT * FROM wemall_goodsclass WHERE id=#{id}
     </select>
 
     <insert id="insert" parameterType="com.springbootmybatis.model.GoodClassEntity">
