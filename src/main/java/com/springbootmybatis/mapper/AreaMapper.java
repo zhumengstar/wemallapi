@@ -7,6 +7,6 @@ import java.util.List;
 public interface AreaMapper {
     List<AreaEntity> getAll();
 
-    AreaEntity getOne(long id);
+    AreaEntity getOne(Long id);
 
 }

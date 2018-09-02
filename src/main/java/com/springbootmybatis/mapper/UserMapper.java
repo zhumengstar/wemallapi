@@ -7,5 +7,5 @@ import java.util.List;
 public interface UserMapper {
     List<UserEntity> getAll();
 
-    UserEntity getOne(long id);
+    UserEntity getOne(Long id);
 }

@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface AccessoryMapper {
     List<AccessoryEntity> getAll();
-    AccessoryEntity getOne(long id);
+    AccessoryEntity getOne(Long id);
 }

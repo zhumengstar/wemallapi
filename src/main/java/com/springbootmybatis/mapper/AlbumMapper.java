@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface AlbumMapper {
     List<AlbumEntity> getAll();
-    AlbumEntity getOne(long id);
+    AlbumEntity getOne(Long id);
 }

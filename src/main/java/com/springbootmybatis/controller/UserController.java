@@ -22,7 +22,7 @@ public class UserController {
     }
 
     @RequestMapping("/getOne/{id}")
-    public UserEntity getOne(@PathVariable long id){
+    public UserEntity getOne(@PathVariable Long id){
         return userMapper.getOne(id);
     }
 }

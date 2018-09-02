@@ -27,18 +27,18 @@ public class GoodClassController {
     }
 
     @RequestMapping("/getOne/{id}")
-    public GoodClassEntity getOne(@PathVariable long id) {
+    public GoodClassEntity getOne(@PathVariable Long id) {
         GoodClassEntity wemall=wemall_goodsclassMapper.getOne(id);
         return wemall;
     }
 
     @RequestMapping("/deleteOne/{id}")
-    public Boolean delete(@PathVariable long id){
+    public Boolean delete(@PathVariable Long id){
         return wemall_goodsclassMapper.delete(id);
     }
 
     @RequestMapping("/getGoodsAtoB/{id1}/{id2}")
-    public List<GoodClassEntity> getGoodsAtoB(@PathVariable long id1, @PathVariable long id2){
+    public List<GoodClassEntity> getGoodsAtoB(@PathVariable Long id1, @PathVariable Long id2){
         Map<String ,Object> map=new HashMap<>();
         map.put("id1",id1);
         map.put("id2",id2);

@@ -10,7 +10,7 @@ public interface GoodClassMapper {
 
     List<GoodClassEntity> getAll();
 
-    GoodClassEntity getOne(long id);
+    GoodClassEntity getOne(Long id);
 
     Boolean insert(GoodClassEntity goodsclass);
 
