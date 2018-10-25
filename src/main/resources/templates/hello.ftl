@@ -49,9 +49,9 @@
 <br>
 <a id="user2" href="${user2}">${user2}</a>
 <br>
-<a href="http://39.107.108.40:8081/actuator">http://39.107.108.40:8081/actuator</a><br>
-<a href="http://39.107.108.40:8081/actuator/info">http://39.107.108.40:8081/actuator/info</a><br>
-<a href="http://39.107.108.40:8081/actuator/health">http://39.107.108.40:8081/actuator/health</a><br>
+<a href="http://47.93.8.183:8081/actuator">http://47.93.8.183:8081/actuator</a><br>
+<a href="http://47.93.8.183:8081/actuator/info">http://47.93.8.183:8081/actuator/info</a><br>
+<a href="http://47.93.8.183:8081/actuator/health">http://47.93.8.183:8081/actuator/health</a><br>
 
 
 </body>

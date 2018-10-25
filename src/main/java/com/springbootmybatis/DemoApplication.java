@@ -18,31 +18,31 @@ public class DemoApplication {
 
     @RequestMapping("/")
     public String index(ModelMap map) {
+
+        String local = "http://47.93.8.183:8081";
 //39.107.108.40
 
-        map.put("accessory1", "http://39.107.108.40:8081/accessory/getAccessories");
-        map.put("accessory2", "http://39.107.108.40:8081/accessory/getOne/5");
+        map.put("accessory1", local + "/accessory/getAccessories");
+        map.put("accessory2", local + "/accessory/getOne/5");
 
-        map.put("address1", "http://39.107.108.40:8081/address/getAddresses");
-        map.put("address2", "http://39.107.108.40:8081/address/getOne/32770");
+        map.put("address1", local + "/address/getAddresses");
+        map.put("address2", local + "/address/getOne/32770");
 
-        map.put("album1","http://39.107.108.40:8081/album/getAlbums");
-        map.put("album2","http://39.107.108.40:8081/album/getOne/5");
+        map.put("album1", local+"/album/getAlbums");
+        map.put("album2", local+"/album/getOne/5");
 
-        map.put("area1","http://39.107.108.40:8081/area/getAreas");
-        map.put("area2","http://39.107.108.40:8081/area/getOne/4521985");
+        map.put("area1", local+"/area/getAreas");
+        map.put("area2", local+"/area/getOne/4521985");
 
-        map.put("goodClass1","http://39.107.108.40:8081/goodClass/getClasses");
-        map.put("goodClass2","http://39.107.108.40:8081/goodClass/getOne/3");
+        map.put("goodClass1", local+"/goodClass/getClasses");
+        map.put("goodClass2", local+"/goodClass/getOne/3");
 
-        map.put("user1","http://39.107.108.40:8081/user/getUsers");
-        map.put("user2","http://39.107.108.40:8081/user/getOne/32768");
+        map.put("user1", local+"/user/getUsers");
+        map.put("user2", local+"/user/getOne/32768");
 
         return "hello";
 
     }
-
-
 
 
 }
